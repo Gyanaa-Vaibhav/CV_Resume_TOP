@@ -1,5 +1,5 @@
 
-.headerform{
+.header-form, form{
     min-width: 85%;
     padding: 1.5em 1em;
     border-radius: 0.3em;
@@ -10,11 +10,11 @@
     box-shadow: 0 15px 27px -5px rgba(50, 50, 93, .1), 0 0px 16px -8px rgba(0, 0, 0, .25);
 }
 
-.headerform h2{
+.header-form h2,form h2{
     margin-bottom: 0.6em;
 }
 
-.headerform input{
+.header-form input,form input{
     background-color: #f3f4f6;
     border: none;
     font-size: 1rem;
@@ -24,7 +24,7 @@
     margin: 0.3em;
 }
 
-.headerform label{
+.header-form label,form label{
     margin: 0.5em 0;
     font-weight: 500;
 }

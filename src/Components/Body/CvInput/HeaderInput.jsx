@@ -6,7 +6,10 @@ export default function HeaderInput() {
     const { value, dispatch } = useContext(Data);
 
     return (
-        <form className="headerform" onSubmit={(e) => e.preventDefault()}>
+        <form
+            className="header-form"
+            onSubmit={(e) => e.preventDefault()}
+        >
             <h2>Personal Details</h2>
             <label htmlFor="name">
                 Full Name <br />

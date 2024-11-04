@@ -1,0 +1,18 @@
+.education-from{
+    margin-top: 0.6em;
+}
+
+.education-from .title{
+    display: flex;
+    align-items: center;
+}
+
+.education-from .title h2{
+    margin: 0;
+    margin-right: auto;
+    transition: all 0.5s;
+}
+
+.education-from .title svg{
+    transition: all 0.5s;
+}

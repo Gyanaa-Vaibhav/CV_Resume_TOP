@@ -7,6 +7,8 @@ export default function HeaderOutput() {
   return (
     <div className="heading">
       <h2 className="name">{headerValue.name || "Gyanaa Vaibhav"}</h2>
+      <div>
+      </div>
       <div className="contactinfo">
         <div>
           <svg

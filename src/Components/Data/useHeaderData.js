@@ -25,7 +25,8 @@ function render(value, action) {
             };
 
         default:
-            break;
+            console.warn(`Unhandled action type: ${action.type}`);
+            return value;
     }
 }
 
