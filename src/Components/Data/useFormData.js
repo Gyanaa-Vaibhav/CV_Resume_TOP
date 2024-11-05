@@ -30,26 +30,30 @@ function render(value, action) {
     }
 }
 
+// Done OK Working
 
 export default function useFormData(x, type) {
-    const educationData = []
-    const experienceData = [];
+    const [educationData, setEducationData] = useState([]);
+    const [experienceData, setExperienceData] = useState([]);
+
     
     
-    if (type === 'Education') {
-        console.log(type)
-        const data = {
-            [x[0].id]:x[0].value,
-            [x[0].id]:x[0].value,
-            [x[0].id]:x[0].value,
-            [x[0].id]:x[0].value,
-            [x[0].id]:x[0].value,
-            [x[0].id]:x[0].value,
-        }
-        console.log(data)
-    } else if (type === 'Experience') {
+    // if (type === 'Education') {
+    //     console.log(type)
+    //     const data = {
+    //         [x[0].id]:x[0].value,
+    //         [x[0].id]:x[0].value,
+    //         [x[0].id]:x[0].value,
+    //         [x[0].id]:x[0].value,
+    //         [x[0].id]:x[0].value,
+    //         [x[0].id]:x[0].value,
+    //     }
+    //     console.log(data)
+    //     console.log("educationData", educationData)
+
+    // } else if (type === 'Experience') {
         
-    }
+    // }
 
     // const [value, dispatch] = useReducer(render, {
     //     name: "",
@@ -58,7 +62,7 @@ export default function useFormData(x, type) {
     //     location: "",
     // });
 
-    return [educationData, experienceData]
+    return [setEducationData, setExperienceData, educationData, experienceData]
+    
 }
 
-// const [educationData, setEducationData] = [];

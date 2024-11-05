@@ -57,3 +57,7 @@ textarea{
     border-radius: 1em;
     font-size: 0.9rem;
 }
+
+.btn button:active{
+    transform: translateY(2px);
+}

@@ -1,9 +1,16 @@
-import React, { useReducer, useRef } from "react";
+import React, { useContext } from "react";
 import "./CvInput.css";
 import HeaderInput from "./HeaderInput";
 import MainForm from "./MainFrom";
+import { Data } from "../Cvmain";
+
+// Done Ok Working
 
 export default function CvInput() {
+  const { value1, value2 } = useContext(Data)
+  const { setEducation, setExperience, education, experience } = value2
+
+  console.log("Experience",experience)
 
   return (
     <div className="form-container">
@@ -20,6 +27,8 @@ export default function CvInput() {
             ['Location', 'Optional']
           ]
         }
+        set={setEducation}
+        data={education}
       />
 
       <MainForm
@@ -34,6 +43,8 @@ export default function CvInput() {
             ['Description','Optional']
           ]
         }
+        set={setExperience}
+        data={experience}
       />
 
     </div>

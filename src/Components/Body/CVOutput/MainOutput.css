@@ -1,0 +1,23 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data{
+    width: 80%;
+}
+
+.output_title{
+    background-color: rgba(14, 55, 78, .07);
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1em 0;
+    padding: 0.2em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 1.5em;
+}
