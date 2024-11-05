@@ -1,0 +1,59 @@
+.main-from{
+    margin-top: 0.6em;
+}
+
+.main-from .title{
+    display: flex;
+}
+
+.main-from .title h2{
+    margin: 0;
+    margin-right: auto;
+    transition: all 0.5s;
+    margin-bottom: 0.6em;
+}
+
+.main-from .title svg{
+    transition: all 0.5s;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form label{
+    margin: 0.5em 0;
+    font-weight: 500;
+}
+
+.optional{
+    opacity: 0.5;
+    font-size: 0.6rem;
+}
+
+textarea{
+    font-family: "Inter", serif;
+    background-color: #f3f4f6;
+    border: none;
+    font-size: 1rem;
+    padding: 0.3em 0.5em;
+    border-radius: 1em;
+    width: 90%;
+    margin: 0.3em;
+    resize: vertical;
+}
+
+.btn{
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.btn button{
+    padding: 0.3em 0.6em;
+    border: 2px solid #55555599;
+    background-color: transparent;
+    border-radius: 1em;
+    font-size: 0.9rem;
+}

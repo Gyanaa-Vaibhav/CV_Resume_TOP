@@ -3,13 +3,12 @@ import { Data } from "../Cvmain";
 import "./HeaderInput.css";
 
 export default function HeaderInput() {
-    const { value, dispatch } = useContext(Data);
+    // Updated Everything is OK
+    const { header, value1 } = useContext(Data);
+    const { headerValue, dispatch } = header;
 
     return (
-        <form
-            className="header-form"
-            onSubmit={(e) => e.preventDefault()}
-        >
+        <form className="header-form" onSubmit={(e) => e.preventDefault()}>
             <h2>Personal Details</h2>
             <label htmlFor="name">
                 Full Name <br />
@@ -17,6 +16,7 @@ export default function HeaderInput() {
                     type="text"
                     name="name"
                     id="name"
+                    value={headerValue.name}
                     onChange={(e) => {
                         dispatch({
                             type: "name",
@@ -32,6 +32,7 @@ export default function HeaderInput() {
                     type="email"
                     name="email"
                     id="email"
+                    value={headerValue.email}
                     onChange={(e) => {
                         dispatch({
                             type: "email",
@@ -46,6 +47,7 @@ export default function HeaderInput() {
                     type="text"
                     name="phone"
                     id="phone"
+                    value={headerValue.phone}
                     onChange={(e) => {
                         dispatch({
                             type: "phone",
@@ -60,6 +62,7 @@ export default function HeaderInput() {
                     type="location"
                     name="location"
                     id="location"
+                    value={headerValue.location}
                     onChange={(e) => {
                         dispatch({
                             type: "location",

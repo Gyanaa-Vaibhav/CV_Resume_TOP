@@ -2,8 +2,12 @@ import React, { useContext } from "react";
 import { Data } from "../Cvmain";
 import "./HeaderOutput.css";
 
+// Updated Everything is OK
+
 export default function HeaderOutput() {
-  const { headerValue, dispatch } = useContext(Data);
+  const { header, value2 } = useContext(Data);
+  const { headerValue, dispatch } = header;
+
   return (
     <div className="heading">
       <h2 className="name">{headerValue.name || "Gyanaa Vaibhav"}</h2>

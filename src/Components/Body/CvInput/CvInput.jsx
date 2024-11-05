@@ -1,14 +1,41 @@
 import React, { useReducer, useRef } from "react";
 import "./CvInput.css";
 import HeaderInput from "./HeaderInput";
-import EducationFrom from "./EducationFrom";
+import MainForm from "./MainFrom";
 
 export default function CvInput() {
 
   return (
     <div className="form-container">
+
       <HeaderInput />
-      <EducationFrom />
+      <MainForm
+        key={'Education'}
+        title={"Education"}
+        list_data={
+          ['School',
+            'Degree',
+            'Start Date',
+            'End Date',
+            ['Location', 'Optional']
+          ]
+        }
+      />
+
+      <MainForm
+        key={'Experience'}
+        title={"Experience"}
+        list_data={
+          ['Company Name',
+            'Position',
+            'Start Date',
+            'End Date',
+            ['Location', 'Optional'],
+            ['Description','Optional']
+          ]
+        }
+      />
+
     </div>
   );
 }
