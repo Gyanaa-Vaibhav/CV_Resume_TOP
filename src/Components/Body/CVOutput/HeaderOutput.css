@@ -4,8 +4,6 @@
     background-color: var(--accent-color);
     padding: 2em 1.5em;
     place-content: center;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
 }
 
 .name{
